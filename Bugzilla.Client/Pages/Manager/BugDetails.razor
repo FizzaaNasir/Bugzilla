@@ -1,0 +1,48 @@
+﻿@page "/BugDetails/{Id:int}"
+@inherits BugDetailsBase
+
+<Bugzilla.Client.Shared.Navbar />
+<div class="card bg-secondary mb-3 p-4" style="width: 100%;">
+    <div class="d-flex flex-row justify-content-between">
+        <div>
+            <h4 class="card-header">@BugDTO.Title</h4>
+            <span class="badge bg-primary mt-3">@BugDTO.Type</span>
+            <span class="badge bg-primary mt-3">@BugDTO.Status</span>
+            <div class="card-body">
+                <div class="card-Header mt-4"><h5 class="mb-3"><strong>Description</strong></h5></div>
+                <p class="card-text" >@BugDTO.Description</p>
+
+                <div class="card-Header mt-4"><h5 class="mb-3"><strong>Assigned To</strong></h5></div>
+                <p class="card-text" >@Assignee</p>
+
+                <div class="card-Header mt-4"><h5 class="mb-3"><strong>Created By</strong></h5></div>
+                <p class="card-text">@Creater</p>
+
+                <div class="card-Header mt-4"><h5 class="mb-3"><strong>Deadline</strong></h5></div>
+                <p class="card-text" >@BugDTO.Deadline</p>
+            </div>
+        </div>
+        <div class="card bg-secondary m-0" style="width: 20rem; height: 15rem;">
+            <ul class="list-group" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: grey; color: whitesmoke"><h5>Status</h5></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center"
+                @onclick="@(() => OnStatusClicked("New"))"
+                    style="cursor: pointer; background-color: @(statusStates["New"] ? "lightyellow" : "white");">
+                    New
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center"
+                @onclick="@(() => OnStatusClicked("Started"))"
+
+                    style="cursor: pointer; background-color: @(statusStates["Started"] ? "lightyellow" : "white");">
+                    Started
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center"
+                @onclick="@(() => OnStatusClicked(BugDTO.Type=="Feature"? "Completed" : "Resolved"))"
+                    style="cursor: pointer; background-color: @(statusStates[BugDTO.Type == "Feature" ? "Completed" : "Resolved"] ? "lightyellow" : "white");">
+                    @(BugDTO.Type == "Feature" ? "Completed" : "Resolved")
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>

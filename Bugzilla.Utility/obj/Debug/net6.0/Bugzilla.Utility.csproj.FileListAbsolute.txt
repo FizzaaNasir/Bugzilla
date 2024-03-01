@@ -1,0 +1,12 @@
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Utility\bin\Debug\net6.0\Bugzilla.Utility.deps.json
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Utility\bin\Debug\net6.0\Bugzilla.Utility.dll
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Utility\bin\Debug\net6.0\Bugzilla.Utility.pdb
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Utility\obj\Debug\net6.0\Bugzilla.Utility.csproj.AssemblyReference.cache
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Utility\obj\Debug\net6.0\Bugzilla.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Utility\obj\Debug\net6.0\Bugzilla.Utility.AssemblyInfoInputs.cache
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Utility\obj\Debug\net6.0\Bugzilla.Utility.AssemblyInfo.cs
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Utility\obj\Debug\net6.0\Bugzilla.Utility.csproj.CoreCompileInputs.cache
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Utility\obj\Debug\net6.0\Bugzilla.Utility.dll
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Utility\obj\Debug\net6.0\refint\Bugzilla.Utility.dll
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Utility\obj\Debug\net6.0\Bugzilla.Utility.pdb
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Utility\obj\Debug\net6.0\ref\Bugzilla.Utility.dll

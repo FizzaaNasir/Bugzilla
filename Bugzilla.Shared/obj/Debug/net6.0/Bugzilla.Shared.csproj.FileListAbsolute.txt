@@ -1,0 +1,12 @@
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Shared\bin\Debug\net6.0\Bugzilla.Shared.deps.json
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Shared\bin\Debug\net6.0\Bugzilla.Shared.dll
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Shared\bin\Debug\net6.0\Bugzilla.Shared.pdb
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Shared\obj\Debug\net6.0\Bugzilla.Shared.csproj.AssemblyReference.cache
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Shared\obj\Debug\net6.0\Bugzilla.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Shared\obj\Debug\net6.0\Bugzilla.Shared.AssemblyInfoInputs.cache
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Shared\obj\Debug\net6.0\Bugzilla.Shared.AssemblyInfo.cs
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Shared\obj\Debug\net6.0\Bugzilla.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Shared\obj\Debug\net6.0\Bugzilla.Shared.dll
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Shared\obj\Debug\net6.0\refint\Bugzilla.Shared.dll
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Shared\obj\Debug\net6.0\Bugzilla.Shared.pdb
+C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Shared\obj\Debug\net6.0\ref\Bugzilla.Shared.dll

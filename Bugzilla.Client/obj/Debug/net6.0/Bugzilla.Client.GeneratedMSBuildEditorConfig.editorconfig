@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = Bugzilla.Client
+build_property.RootNamespace = Bugzilla.Client
+build_property.ProjectDir = C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Client\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Dev\source\repos\Bugzilla\Bugzilla.Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Pages/Manager/BugDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlclxCdWdEZXRhaWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Pages/Manager/CreateProject.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlclxDcmVhdGVQcm9qZWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Pages/Manager/EditProject.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlclxFZGl0UHJvamVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Pages/Manager/Project.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlclxQcm9qZWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Pages/Manager/Projects.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlclxQcm9qZWN0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Pages/QA/CreateBug.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUFcQ3JlYXRlQnVnLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Pages/QA/ProjectDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUFcUHJvamVjdERldGFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Pages/SharedPages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkUGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Pages/SharedPages/ProjectDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkUGFnZXNcUHJvamVjdERldGFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Pages/SharedPages/Projects.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkUGFnZXNcUHJvamVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Pages/SharedPages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkUGFnZXNcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Shared/Navbar.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdmJhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-eq7zt1b3we
+
+[C:/Users/Dev/source/repos/Bugzilla/Bugzilla.Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-h74wb05qoo

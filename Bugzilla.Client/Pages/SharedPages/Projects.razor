@@ -1,0 +1,32 @@
+﻿@page "/Projects/{userId}"
+@inherits ProjectsBase
+<Bugzilla.Client.Shared.Navbar />
+
+<table class="table table-hover" style=" width: 50%">
+    <thead>
+        <tr style="cursor: pointer; width: 50%">
+            <th scope="col">Your Projects</th>
+            <th scope="col"></th>
+
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @if (Projects != null)
+        {
+            @foreach (var item in Projects)
+            {
+
+                <tr style="cursor: pointer; width: 50%" @onclick="(e) => NavigateToProjectDetailsPage(item.Id)">
+                    <th scope="row">@item.Title</th>
+                    <td></td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>Loading...</tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,61 @@
+﻿@page "/ProjectDetail/{Id:int}"
+@inherits ProjectDetailBase
+<Bugzilla.Client.Shared.Navbar />
+
+@if (User != null)
+{
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="d-flex flex-row">
+
+            <table class="table table-hover w-50 p-3">
+                <thead>
+                    <tr>
+                        <th scope="col">@ProjectDTO.Title</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        @if (User.IsInRole("QA"))
+                        {
+                            <th scope="col"><button @onclick="() => NavigateToCreateBugPage()" type="button" class="btn btn-primary" fdprocessedid="4xdgt">Report New Bug</button></th>
+                        }
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @if (Bugs != null)
+                    {
+
+                        @foreach (var item in Bugs)
+                        {
+                            <tr @onclick="(e) => NavigateToBugDetailPage(item.Id)">
+                                <th scope="row"><h6>@item.Title</h6></th>
+                                <td></td>
+                                <td><span class="badge bg-secondary">@item.Type</span></td>
+                                @{
+                                    if (item.Type == "Feature")
+                                    {
+                                        <td><span class="badge @(item.Status == "New" ? "bg-primary" : (item.Status == "Completed" ? "bg-success" : "bg-warning"))">@item.Status</span></td>
+                                    }
+                                    else
+                                    {
+                                        <td><span class="badge @(item.Status == "New" ? "bg-primary" : (item.Status == "Resolved" ? "bg-success" : "bg-warning"))">@item.Status</span></td>
+                                    }
+                                }
+                                <td></td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div>Unauthorized or authenticated</div>
+    }
+}
+else
+{
+    <div>Unauthorized or authenticated</div>
+}

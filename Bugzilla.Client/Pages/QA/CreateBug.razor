@@ -1,0 +1,61 @@
+﻿@page "/CreateBug/{Id:int}"
+@inherits CreateBugBase
+@if (User != null)
+{
+    if (User.Identity.IsAuthenticated && User.IsInRole("QA"))
+    {
+        <Bugzilla.Client.Shared.Navbar />
+
+        <h3 style="padding-top: 5%; padding-bottom: 2%">Create New Bug</h3>
+
+        <div class="card border-secondary " style="width: 50%; height: 40rem; padding: 2%">
+            <EditForm Model="@BugDTO" class="form-group">
+                <div class="form-group">
+                    <label for="Title" class="form-label mt-2"><strong>Title</strong></label>
+                    <InputText class="form-control" type="text" @bind-Value="BugDTO.Title" id="Title" fdprocessedid="pb66qm" />
+
+                    <label for="Description" class="form-label mt-4"><strong>Description</strong></label>
+                    <InputText class="form-control" type="text" @bind-Value="BugDTO.Description" id="Description" fdprocessedid="pb66qm" />
+
+                    <label for="Type" class="form-label mt-4"><strong>Type</strong></label>
+                    <InputSelect class="form-control" @bind-Value="BugDTO.Type" id="Type">
+                        <option value="">Select an option</option>
+                        <option value="Feature">Feature</option>
+                        <option value="Bug">Bug</option>
+                    </InputSelect>
+
+                    <label for="Status" class="form-label mt-4" id="Status"><strong>Status</strong></label>
+                    <InputSelect class="form-control" @bind-Value="BugDTO.Status" id="Status">
+                        <option value="">Select an option</option>
+                        <option value="New">New</option>
+                        <option value="Started">Started</option>
+                        <option value=" @(BugDTO.Type=="Feature"? "Completed" : "Resolved")"> @(
+                    BugDTO.Type == "Feature" ? "Completed" : "Resolved"
+                        )</option>
+                    </InputSelect>
+
+                    <label for="AssignTo" class="form-label mt-4"><strong>Assign To</strong></label>
+                    <InputSelect class="form-control" @bind-Value="BugDTO.AssigneeId" id="AssignTo">
+                        <option value="">Select an option</option>
+                        @if (UserDTO != null)
+                        {
+                            @foreach (var item in UserDTO)
+                            {
+                                <option value="@item.Id">@item.UserName</option>
+                            }
+
+                        }
+                    </InputSelect>
+
+            <button type="button" class="btn btn-primary mt-4" fdprocessedid="9py4su" @onclick="() => CreateNewBug()">Submit</button>
+        </div>
+    </EditForm>
+</div>}
+    else
+    {
+        <div>Not Authorized</div>
+    }
+}
+else{
+    <div>Not Authorized</div>
+}

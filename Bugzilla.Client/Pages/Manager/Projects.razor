@@ -1,0 +1,54 @@
+﻿@page "/Projects"
+@using Microsoft.AspNetCore.Authorization
+@inherits ProjectsBase
+@if (User != null)
+{
+    @if (User.Identity.IsAuthenticated && User.IsInRole("Manager"))
+    {
+        
+        <Bugzilla.Client.Shared.Navbar />
+
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Projects</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <td><button @onclick="() => NavigateToPage()" type="button" class="btn btn-primary" fdprocessedid="4xdgt">Create</button></td>
+                </tr>
+            </thead>
+            <tbody>
+                @if (ProjectDTO != null)
+                {
+                    @foreach (var item in ProjectDTO)
+                    {
+
+                        <tr style="cursor: pointer;" @onclick="(e) => NavigateToProjectPage(item.Id)">
+                            <th scope="row">@item.Title</th>
+                            <td></td>
+                            <td><button type="button" class="btn btn-primary" fdprocessedid="4xdgt" @onclick="(e)=>NavigateToEditPage(item.Id)">Edit</button></td>
+                            <td><button type="button" class="btn btn-primary" fdprocessedid="4xdgt" @onclick="()=>DeleteProject(item.Id)">Delete</button></td>
+                            <td></td>
+                        </tr>
+                    }
+
+                }
+                else
+                {
+                    <tr>Loading...</tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div>Not Authorized</div>
+    }
+
+}
+else
+{
+    <div>Not Authorized</div>
+}

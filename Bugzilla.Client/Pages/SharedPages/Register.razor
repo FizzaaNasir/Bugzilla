@@ -1,0 +1,76 @@
+﻿@page "/Register"
+@inject NavigationManager NavigationManager
+@inherits RegisterBase
+
+
+@if (!string.IsNullOrEmpty(ErrorMessage))
+{
+    <div class="alert alert-danger">@ErrorMessage</div>
+}
+
+<section class="vh-100">
+    <div class="container-fluid h-custom mt-10">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                     class="img-fluid" alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <EditForm Model="@registerData" class="form-group">
+
+                    <!-- Email input -->
+
+                    <div class="form-outline mb-4">
+                        <DataAnnotationsValidator />
+                        <label for="email" class="form-label mt-2"><strong>Email</strong></label>
+                        <InputText class="form-control" @bind-Value="registerData.Email" type="text" id="email" fdprocessedid="pb66qm"
+                                   placeholder="Enter a valid email address" />
+                        <ValidationMessage For="@(() => registerData.Email)" />
+                    </div>
+
+                    <!-- Password input -->
+
+                    <div class="form-outline mb-4">
+                        <DataAnnotationsValidator />
+                        <label for="Password" class="form-label mt-2"><strong>Password</strong></label>
+                        <InputText class="form-control" @bind-Value="registerData.Password" type="text" id="Password" fdprocessedid="pb66qm"
+                                   placeholder="Enter a Your password" />
+                        <ValidationMessage For="@(() => registerData.Password)" />
+                    </div>
+
+
+                    <div class="form-outline mb-4">
+                        <DataAnnotationsValidator />
+                        <label for="Password" class="form-label mt-2"><strong>Confirm Password</strong></label>
+                        <InputText class="form-control" @bind-Value="registerData.ConfirmPassword" type="text" id="Password" fdprocessedid="pb66qm"
+                                   placeholder="Enter confirm password" />
+                        <ValidationMessage For="@(() => registerData.ConfirmPassword)" />
+                    </div>
+
+                     <div class="form-outline mb-4">
+
+                    <InputRadioGroup Name="role" @bind-Value="registerData.Role" id="roles">
+                        <label for="roles" class="form-label mt-2"><strong>Select Your Role</strong></label>
+                       <br/>
+                            Manager <InputRadio Name="role" Value="RoleType.Manager"></InputRadio><br>
+                            Developer <InputRadio Name="role" Value="RoleType.Developer"></InputRadio><br>
+                            QA <InputRadio Name="role" Value="RoleType.QA"></InputRadio><br>
+                    </InputRadioGroup>
+                    </div>
+
+                    <div class="text-center text-lg-start mt-4 pt-2">
+                        <button type="button" class="btn btn-primary btn-lg"
+                                style="padding-left: 2.5rem; padding-right: 2.5rem;"
+                        @onclick="() => SubmitForm()">
+                            Register
+                        </button>
+                        <p class="small fw-bold mt-2 pt-1 mb-0">
+                            Don't have an account? <a href="/Login" class="link-danger">Login</a>
+                        </p>
+                    </div>
+
+                </EditForm>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,31 @@
+﻿@page "/AddProject"
+@inherits CreateProjectBase
+
+@if (User != null)
+{
+    @if (User.Identity.IsAuthenticated && User.IsInRole("Manager"))
+    {
+        <Bugzilla.Client.Shared.Navbar />
+
+<h3 style="padding-top: 5%; padding-bottom: 2%">Create new project</h3>
+
+<div class="card border-secondary mb-3" style="width: 50%; height: 40rem; padding: 5%">
+<EditForm Model="@ProjectDTO" class="form-group">
+
+        <div class="form-group">
+            <label for="Title" class="form-label mt-4">Title</label>
+            <InputText class="form-control"  type="text" @bind-Value="ProjectDTO.Title" id="Title" fdprocessedid="pb66qm" /><br />
+        <button type="button" class="btn btn-primary" fdprocessedid="9py4su" @onclick="() => CreateNewProject()">Submit</button>
+        </div>
+</EditForm>
+        </div>
+    }
+    else
+    {
+        <div>Not Authorized</div>
+    }
+
+}
+else{
+    <div>Not Authorized</div>
+}
