@@ -55,7 +55,7 @@ namespace Tests
             var result = await _controller.Add(null);
 
             // Assert
-            Assert.IsType<BadRequestObjectResult>(result);
+            Assert.IsType<BadRequestResult>(result);
         }
 
         [Fact]
