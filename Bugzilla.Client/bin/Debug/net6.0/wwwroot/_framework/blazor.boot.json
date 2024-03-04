@@ -214,14 +214,14 @@
       "netstandard.dll": "sha256-2M8m82GceNG8Z8I4dD74L7Tl4vwXdwXcVpYN80ouzQA=",
       "System.Private.CoreLib.dll": "sha256-dFxocfrY9q0E7UJ6nBlyNfnWYTyPu3RKzSggfRhoPJY=",
       "Bugzilla.Shared.dll": "sha256-pJSjCxH2ALNxxvXqO1afDNrTecL8vC\/SLER10gBUPys=",
-      "Bugzilla.Client.dll": "sha256-pX45R6ejVl\/705+B30kKsp71gc3R4agKZk1Yy6DNd8Q="
+      "Bugzilla.Client.dll": "sha256-1WhXz5ZZ7UushzIgKXju544a8R5pgcA\/bHMCO5nMpAI="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Bugzilla.Shared.pdb": "sha256-UgCz\/Ad7gjwzqQ7MGaW4PqnIosTFNXoNJUAuHzV0MwY=",
-      "Bugzilla.Client.pdb": "sha256-xxRfMp+TlUmkWe6GRUtNyZ0yUZGNBkVg4Oiaf8JX8eM="
+      "Bugzilla.Client.pdb": "sha256-Fyw94z\/1nyVDhX5M\/VHnA8BCcQunvN6+aFmf82MPpmY="
     },
     "runtime": {
       "dotnet.6.0.20.cppgifegpt.js": "sha256-iXtnf0CK+zdIWjR0cpE38tWChIpNC6sO+aSQAW+aBQU=",
