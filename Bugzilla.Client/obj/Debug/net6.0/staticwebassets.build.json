@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9cq2pctn2p8IxlWaJhupl7De9msuVyxjPetsZgqnOwc=",
+  "Hash": "yfjPMij8z+hE56OhoDIjxtwJbx9I/MVN6hNDFlPx8qo=",
   "Source": "Bugzilla.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -7767,6 +7767,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
+    },
+    {
+      "Identity": "C:\\Users\\Dev\\source\\repos\\Bugzilla\\Bugzilla.Client\\wwwroot\\staticwebapp.config.json",
+      "SourceId": "Bugzilla.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dev\\source\\repos\\Bugzilla\\Bugzilla.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "staticwebapp.config.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\staticwebapp.config.json"
     }
   ]
 }

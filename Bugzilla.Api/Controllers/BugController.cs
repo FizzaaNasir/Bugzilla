@@ -106,5 +106,15 @@ namespace Bugzilla.Api.Controllers
             }
 
         }
+
+        [HttpGet]
+        //Every role is allowed to update the bug status
+        public async Task<ActionResult> testapi()
+        {
+
+           return Ok();
+            }
+
+        }
     }
 }
