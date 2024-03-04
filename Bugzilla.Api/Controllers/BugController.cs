@@ -22,10 +22,10 @@ namespace Bugzilla.Api.Controllers
             _bugRepository = bugRepository;
         }
 
-       
+
         [HttpPost("Create")]
         [Authorize(Roles = "QA")]
-        public async Task<ActionResult> Add([FromBody]BugDTO bugDTO)
+        public async Task<ActionResult> Add([FromBody] BugDTO bugDTO)
         {
 
             if (bugDTO == null)
@@ -112,9 +112,7 @@ namespace Bugzilla.Api.Controllers
         public async Task<ActionResult> testapi()
         {
 
-           return Ok();
-            }
-
+            return Ok();
         }
     }
 }
