@@ -57,9 +57,6 @@ jobs:
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_416B672F7EB14EF8AD6F9FDEE9719F21 }}
 
       - name: List files in directory
-        run: ls ./Sqlscripts/ 
-
-      - name: List files in directory
         run: ls ./ 
 
       - uses: azure/sql-action@v2.2.1
