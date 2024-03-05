@@ -63,7 +63,7 @@ jobs:
         env:
           ASPNETCORE_ENVIRONMENT: 'Production'
           ConnectionStrings__DefaultConnection: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
-        run: dotnet ef database update --configuration Release
+        run: dotnet ef database update --project /../../Bugzilla.Api/Bugzilla.Api.csproj --configuration Release
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
