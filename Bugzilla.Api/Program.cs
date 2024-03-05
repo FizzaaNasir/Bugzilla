@@ -59,7 +59,7 @@ builder.Services.AddScoped<IProjectUserRepository, ProjectUserRepository>();
 
 var app = builder.Build();
 app.UseCors(policy =>
-    policy.WithOrigins("http://localhost:7077", "https://localhost:7077")
+    policy.WithOrigins("http://localhost:7077", "https://localhost:7077", "https://proud-stone-046545a10.4.azurestaticapps.net")
     .AllowAnyMethod()
     .AllowAnyHeader()
 );
