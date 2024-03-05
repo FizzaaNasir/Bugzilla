@@ -1,13 +1,6 @@
 ﻿{
   "$schema": "https://json.schemastore.org/launchsettings.json",
-  "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "http://localhost:20153",
-      "sslPort": 44338
-    }
-  },
+  
   "profiles": {
     "Bugzilla.Api": {
       "commandName": "Project",

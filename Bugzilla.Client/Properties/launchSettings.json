@@ -1,12 +1,4 @@
 {
-  "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "http://localhost:43084",
-      "sslPort": 44372
-    }
-  },
   "profiles": {
     "Bugzilla.Client": {
       "commandName": "Project",
